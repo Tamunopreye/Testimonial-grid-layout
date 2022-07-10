@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&display=swap');
+
+:root {
+    --Moderateviolet : hsl(263, 55%, 52%);
+    --Verydarkgrayishblue: hsl(217, 19%, 35%);
+    --Verydarkblackishblue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Lightgray: hsl(0, 0%, 81%);
+    --Lightgrayishblue: hsl(210, 46%, 95%);
+}
+
+*::before::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* justify-content: center; */
+}
+
+.grid-container {
+    display: grid;
+    height: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin: 0 140px;
+}
+
+.grid-items {
+    border: 1px solid;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#item-1 {
+    grid-column: 1/ span 2;
+}
+/* #item-2 {} */
+#item-3 {
+    grid-row: span 2;
+}
+/* #item-4 {} */
+#item-5 {
+    grid-column: span 2;
+}
+
